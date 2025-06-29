@@ -75,7 +75,6 @@ project-root/
 │   └── config.py
 ├── outputs/
 │   └── images/
-├── generate_samples.py
 ├── requirements.txt
 └── README.md
 ```
@@ -88,4 +87,4 @@ cd <repo-folder>
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
-```
+
