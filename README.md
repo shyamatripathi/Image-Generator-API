@@ -11,7 +11,7 @@ A FastAPI-based application to generate AI images from text prompts using Stable
 - Asynchronous image generation
 - Request validation using Pydantic
 - Rate limiting
-- 
+
 ## Requirements
 Install dependencies:
 pip install -r requirements.txt
