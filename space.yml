@@ -1,0 +1,6 @@
+sdk: "fastapi"
+python_version: "3.10"
+app_file: "main.py"
+
+hardware:
+  gpu: "t4-small"
