@@ -1,8 +1,16 @@
 fastapi
 uvicorn
 pydantic
-diffusers
+python-multipart
+
+# ML / Diffusion dependencies
 torch
+diffusers==0.25.0
+transformers
+accelerate
+safetensors
 Pillow
+
+# Utilities
 requests
 slowapi
