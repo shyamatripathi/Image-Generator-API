@@ -5,9 +5,9 @@ from app.image_generator import generate_images
 from app.models import GenerateRequest
 import uuid, os
 
-limiter = Limiter(key_func=get_remote_address)
+limiter = Limiter(key_func=get_remote_address)# creates a rate limiter instance that tracks requests per IP address, ensuring you control API access and prevent abuse by limiting how often a single client (identified by their IP) can hit your FastAPI endpoints. 
 
-app = FastAPI()
+app = FastAPI()#FastAPI application instance
 app.state.limiter = limiter
 app.add_exception_handler(429, _rate_limit_exceeded_handler)
 
@@ -26,3 +26,4 @@ async def generate(request: Request, data: GenerateRequest = Body(...)):
         response_paths.append(path)
     
     return {"images": response_paths}
+
